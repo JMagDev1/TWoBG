@@ -4,6 +4,4 @@ This is a website I developed during a Kainos CodeCamp week between 21 & 25th Au
 
 
 # Languages used: 
-  HTML,
-  CSS,
-  JavaScript
+HTML, CSS & JS
