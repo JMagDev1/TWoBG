@@ -1,0 +1,205 @@
+body{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    overflow-x: hidden;
+    background-color: #1f7b1c;
+}
+    
+.title{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: black;
+}
+  
+.HomePgImg{
+    position: absolute;
+    width: 70vw;
+    height: 75vh;
+    top: 25%;
+    left: 2%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5vh;
+}
+
+.HomePgWelcomeText {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    width: 20vw;
+    height: 75vh;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
+.HomePgImg{
+    position: absolute;
+    width: 70vw;
+    height: 75vh;
+    top: 25%;
+    left: 2%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5vh;
+}
+
+.HistoryPic {
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    width: 55vw;
+    height: 55vh;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
+.HistoryText {
+    position: absolute;
+    top: 110%;
+    right: 5%;
+    width: 20vw;
+    height: 75vh;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
+.HisVid{
+    position: absolute;
+    top: 170%;
+    left: 5%;
+    width: 55vw;
+    height: 55vh;
+    font-size: 30px;
+    word-wrap: break-word;
+    padding-bottom: 5vh;
+}
+
+.HistoryVidText {
+    position: absolute;
+    top: 185%;
+    right: 5%;
+    width: 20vw;
+    height: 75vh;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
+
+.TitleDialogue {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  .TitleDialogue:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .TitleDialogue > div {
+    width: 40vw;
+    height: 40vh;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    border: solid;
+    border-color: whitesmoke;
+    background: #fff;
+    background: #317070;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10vh;
+  }
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 53px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+
+}
+.close:hover {
+    background: #00d9ff;
+}
+  
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    background-color: transparent;
+    color: #fff;
+    gap: 1em;
+    font-size: 25px;
+    text-align: center; 
+}
+
+.Nav-links a {
+    color: #fff;
+}
+.Nav-links:visited {
+    color: #fff;
+}
+
+.navbar li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.navbar li {
+    padding: 5px 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-buttons {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-Bar-Icon:hover {
+    cursor: pointer;
+}
+
+.nav-Bar-Icon {
+    width: 10vw;
+    padding-top: 5vh;
+}
+
+h1{
+    font-size: 35px;
+    position: absolute;
+    left: 35%;
+}
+

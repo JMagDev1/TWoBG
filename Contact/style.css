@@ -1,0 +1,105 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    overflow-x: hidden;
+}
+
+.Form-Container{
+    width: 75vw;
+    height: 50vh;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+  
+.field label {
+    display: block;
+    font-size: 20px;
+    color: #777;
+}
+  
+.field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 25px;
+}
+  
+input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 25px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
+}
+
+#from_name{
+    width: 20vw;
+}
+
+#message{
+    width: 20vw;
+    height: 20vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    background-color: transparent;
+    color: #fff;
+    gap: 1em;
+    font-size: 25px;
+    text-align: center; 
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+.navbar li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.navbar li {
+    padding: 5px 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-buttons {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-Bar-Icon:hover {
+    cursor: pointer;
+}
+
+.nav-Bar-Icon {
+    width: 10vw;
+}
+
+h1{
+    font-size: 35px;
+    position: absolute;
+    left: 44.5%;
+    top: 15%;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap" rel="stylesheet">
+    <title>Contact us | The World of Board Games</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="nav-Bar-Icon" onclick="toggleMenu()"><img src="Images/Menu-Icon.svg" alt="Show Navigation Bar"></a>
+        <ul class="nav-buttons">
+            <li class="Nav-links"> 
+                <a href="#home">Home</a>
+            </li>
+            <li class="Nav-links">
+                <a href="Classic Board Games/ClassicGames.html" class="ClassicDropdown">Classic Board Games</a>
+            </li>
+            <li class="Nav-links">
+                <a href="Modern Board Games/ModernGames.html">Modern Board Games</a>
+            </li>
+            <li class="Nav-links">
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 class="Title">Contact Us</h1>
+
+<div class="Form-Container">
+    <form id="form">
+        <div class="field">
+          <label for="from_name">Name</label>
+          <input type="text" name="from_name" id="from_name">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <input type="text" name="message" id="message">
+        </div>
+      
+        <input type="submit" id="button" value="Send Email" >
+    </form>
+</div>
+    
+      
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+        emailjs.init('kxBqRqcZ6uWALu5qS')
+        </script>
+
+        <script>
+            const btn = document.getElementById('button');
+            const name = document.getElementById("from_name");
+            const msg = document.getElementById("message");
+            document.getElementById('form')
+            .addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                btn.value = 'Sending...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_ibe45lv';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Send Email';
+                    name.value = "";
+                    msg.value = "";
+                    alert('Sent!');
+                }, (err) => {
+                    btn.value = 'Send Email';
+                    alert(JSON.stringify(err));
+                });
+            });
+
+        </script>
+
+<script src="script.js"></script>
+
+  </body>
+</html>
+</body>
+</html>

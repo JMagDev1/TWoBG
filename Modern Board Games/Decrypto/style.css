@@ -1,0 +1,87 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(218, 165, 232);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    background-color: transparent;
+    color: #fff;
+    gap: 1em;
+    font-size: 25px;
+    text-align: center; 
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+.navbar li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.navbar li {
+    padding: 5px 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-buttons {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-Bar-Icon:hover {
+    cursor: pointer;
+}
+
+.nav-Bar-Icon {
+    width: 10vw;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.abt-game{
+    font-size: 30px;
+    word-wrap: break-word;
+    width: 50vw;
+    padding-left: 2vw;
+    padding-top: 5vh;
+}
+
+.GameImage{
+    width: 35vw;
+    height: 45vh;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+
+.howPlay{
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25vh;
+}
