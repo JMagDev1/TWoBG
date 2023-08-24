@@ -5,3 +5,6 @@ This is a website I developed during a Kainos CodeCamp week between 21 & 25th Au
 
 # Languages used: 
 HTML, CSS & JS
+
+
+To view the site click on https://jmagdev1.github.io/TWoBG/#
