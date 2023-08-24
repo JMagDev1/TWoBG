@@ -44,6 +44,11 @@
         <input type="submit" id="button" value="Send Email" >
     </form>
 </div>
+
+<div id="openTitle" class="TitleDialogue">
+      <a href="#" title="Close" class="close">X</a>
+      <p style="color:white">Email Sent!</p>
+</div>
     
       
       <script type="text/javascript"
@@ -71,7 +76,7 @@
                     btn.value = 'Send Email';
                     name.value = "";
                     msg.value = "";
-                    alert('Sent!');
+                    btn.value = "Sent!"
                 }, (err) => {
                     btn.value = 'Send Email';
                     alert(JSON.stringify(err));

@@ -73,6 +73,8 @@
 
     <script>
         const btn = document.getElementById('button');
+        const name = document.getElementById("from_name");
+        const msg = document.getElementById("message");
         document.getElementById('form')
         .addEventListener('submit', function(event) {
         event.preventDefault();
@@ -85,7 +87,9 @@
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
             btn.value = 'Send Email';
-            alert('Sent!');
+            name.value = "";
+            msg.value = "";
+            btn.value = "Sent!"
             }, (err) => {
             btn.value = 'Send Email';
             alert(JSON.stringify(err));
